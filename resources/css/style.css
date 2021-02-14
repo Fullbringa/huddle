@@ -1,0 +1,135 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* general */
+html {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.rightSide a {
+    text-decoration: none;
+}
+
+.rightSide .tryIt {
+    padding: 0.75rem 2rem;
+    color: hsl(322, 100%, 66%);
+    width: 8.75rem;
+    height: 2.5rem;
+    font-size: 1rem;
+}
+
+/* main body */
+.main_body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 12rem;
+}
+
+/* .body_main_slogan {
+    border: 1px solid red;
+} */
+
+.body_main_slogan h1{
+    font-size: 3.5rem;
+}
+
+.body_main_hook {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    /* text-align: center; */
+}
+
+.body_main_hook p {
+    margin-top: 1.3rem;
+    font-size: 1.2rem;
+    width: 45rem;
+    margin-bottom: 3rem;
+}
+
+.membershipButton {
+    margin: 3.125rem;
+}
+
+.membership {
+    padding: 2rem 6.25rem;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.membershipButton a {
+    text-decoration: none;
+}
+
+/* midsection */
+.screenMockups {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.socialNumbers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.socialNumbers img {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.socialNumbers .numbers {
+    font-size: 4.3rem;
+    font-weight: bold;
+}
+
+.socialNumbers .infoText {
+    opacity: 50%;
+    font-size: 1.2rem;
+}
+
+/* sections */
+/* grow together */
+.growTogether {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 26.25rem);
+    height: 35rem;
+}
+
+.growTogether .leftSection {
+    align-self: center;
+    justify-self: center;
+    width: 31rem;
+}
+
+.growTogether img {
+    height: 26.25rem;
+    width: auto;
+}
+
+/* specials */
+
+.buttonAlike {
+    
+    border-radius: 90px;
+    border: 1px solid hsl(322, 100%, 66%);
+}
