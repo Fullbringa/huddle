@@ -3,11 +3,14 @@
 
 /* general */
 html {
-    padding: 0;
-    margin: 0;
     font-size: 16px;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
 }
 
 /* navbar */
@@ -109,16 +112,39 @@ nav {
 /* sections */
 /* grow together */
 .growTogether {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 26.25rem);
-    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
 }
 
-.growTogether .leftSection {
+.growTogether #growTop, #growBottom {
+    height: 12rem;
+}
+
+.sectionsGrow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 26.25rem);
+    height: 35rem;
+    margin-bottom: -4rem;
+    background-color: hsl(207, 100%, 98%);
+/*     background-image: url(../images/bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+}
+
+.growTogether .texts {
     align-self: center;
     justify-self: center;
     width: 31rem;
+    
+}
+
+.growTogether .texts h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+
 }
 
 .growTogether img {
@@ -126,6 +152,114 @@ nav {
     width: auto;
 }
 
+/* flow convo */
+.flowConvo {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 26.25rem);
+    height: 35rem;
+}
+
+.sectionsFlow {
+    margin-top: 10rem;
+    margin-bottom: -6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+/*     background-image: url(../images/bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+}
+
+.flowConvo .texts {
+    align-self: center;
+    justify-self: center;
+    width: 31rem;
+}
+
+.flowConvo .texts h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+
+}
+
+.flowConvo .images img{
+    height: 26.25rem;
+    width: auto;
+}
+
+/* your users */
+.yourUsers {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+.yourUsers #growTop, #growBottom {
+    height: 12rem;
+}
+
+.sectionsUsers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 26.25rem);
+    height: 35rem;
+    margin-bottom: -4rem;
+    background-color: hsl(207, 100%, 98%);
+/*     background-image: url(../images/bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+}
+
+.yourUsers .texts {
+    align-self: center;
+    justify-self: center;
+    width: 31rem;
+    
+}
+
+.yourUsers .texts h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+
+}
+
+.yourUsers img {
+    height: 26.25rem;
+    width: auto;
+}
+
+/* end of section */
+.sectionEnd {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerText {
+    background-color: hsl(192, 100%, 9%);
+    margin-top: -1rem;
+}
+
+footer img {
+    width: 100%;
+}
+
+footer .attribution {
+    color: white;
+}
 /* specials */
 
 .buttonAlike {
